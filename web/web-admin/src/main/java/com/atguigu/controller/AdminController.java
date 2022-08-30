@@ -51,7 +51,9 @@ public class AdminController extends BaseController {
         //分页查询
         PageInfo<Admin> pageInfo = adminService.findPage(filters);
         model.addAttribute("page", pageInfo);
+	model.addAttribute("num",1);
         return PAGE_INDEX;
+	
     }
 
 
